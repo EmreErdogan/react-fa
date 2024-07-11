@@ -1,3 +1,5 @@
 src/
 npm-debug.log
 .babelrc
+.vscode/
+example/

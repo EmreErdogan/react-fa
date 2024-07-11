@@ -24,7 +24,7 @@ version-major version-minor version-patch: lint test
 
 publish: build
 	@git push --tags origin HEAD:master
-	@npm publish
+	@npm publish --access public
 
 lib/%.js: src/%.js
 	@echo "Building $(@)"
@@ -50,7 +50,7 @@ publish-example: build
 		git checkout -b gh-pages;\
 		git add .;\
 		git commit -m 'Update';\
-		git push -f git@github.com:andreypopp/react-fa.git gh-pages;\
+		git push -f git@github.com:emreerdogan/react-fa.git gh-pages;\
 	)
 
 clean:
